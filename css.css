@@ -1,4 +1,4 @@
-/* Reset some default browser styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -94,7 +94,7 @@ footer {
 }
 .profile-pic {
     width: 100%;
-    max-width: 200px; /* 最大寬度設置為200px */
+    max-width: 50px;
     height: auto;
-    border-radius: 50%; /* 圓形大頭照效果 */
+    border-radius: 50%;
 }
