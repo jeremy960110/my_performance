@@ -92,3 +92,9 @@ footer {
     width: 100%;
     bottom: 0;
 }
+.profile-pic {
+    width: 100%;
+    max-width: 200px; /* 最大寬度設置為200px */
+    height: auto;
+    border-radius: 50%; /* 圓形大頭照效果 */
+}
