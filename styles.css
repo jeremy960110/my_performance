@@ -69,6 +69,9 @@ section h2 {
 
 .certificate, .apcs-scores {
     margin-bottom: 15px;
+    opacity: 0;
+    transform: translateY(20px); /* 從下方滑入 */
+    animation: slideUp 1s forwards ease-out;
 }
 
 .certificate a, .apcs-scores a {
@@ -135,6 +138,17 @@ footer {
     to {
         transform: translateX(0);
         opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
