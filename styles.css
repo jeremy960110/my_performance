@@ -95,10 +95,10 @@ footer {
 
 .profile-pic {
     width: 150px;
-    height: 150px;
+    height: 180px;
     border-radius: 50%;
     display: block;
-    margin: 100px auto 20px auto;
+    margin: 10px auto 20px auto;
     object-fit: cover;
 }
 
