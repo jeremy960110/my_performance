@@ -67,25 +67,26 @@ section h2 {
     color: #35424a;
 }
 
+/* 調整學術與認證部分 */
 #academic .award {
     margin-bottom: 15px;
     opacity: 0;
-    transform: translateY(20px); /* 從下方滑入 */
+    transform: translateY(20px);
     animation: slideUp 1s forwards ease-out;
 }
 
 #academic .award a {
-    text-decoration: none;  /* 保留下劃線樣式 */
+    text-decoration: none; 
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 #academic .award a:hover {
     text-decoration: underline;
-    color: #f90707; /* 滑過時顯示橘色 */
+    color: #f90707; /* 鏈接滑過時變紅色 */
 }
 
-
+/* 圖片畫廊樣式 */
 .gallery-container {
     display: flex;
     flex-wrap: wrap;
@@ -100,6 +101,7 @@ section h2 {
     animation: fadeInImage 1.5s forwards;
 }
 
+/* 頁尾樣式 */
 footer {
     text-align: center;
     padding: 10px 0;
@@ -110,6 +112,7 @@ footer {
     bottom: 0;
 }
 
+/* 大頭照樣式 */
 .profile-pic {
     width: 150px;
     height: 180px;
@@ -121,6 +124,7 @@ footer {
     animation: fadeInProfile 2s ease-in-out forwards;
 }
 
+/* 成長歷程部分的樣式調整 */
 #growth h3 {
     margin-top: 20px;
     margin-bottom: 10px;
@@ -128,22 +132,22 @@ footer {
 
 #growth ul {
     padding-left: 20px;
-    list-style-type: none;
+    list-style-type: none; /* 移除預設的列表樣式 */
 }
 
 #growth ul li {
     position: relative;
-    padding-left: 20px; 
+    padding-left: 20px; /* 讓內容與符號對齊 */
 }
 
 #growth ul li::before {
-    content: "•"; 
+    content: "•"; /* 自定義符號 */
     position: absolute;
     left: 0;
-    color: #35424a;
+    color: #35424a; /* 自定義符號顏色 */
 }
 
-
+/* 動畫效果 */
 @keyframes fadeInHeader {
     from {
         opacity: 0;
