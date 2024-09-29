@@ -67,24 +67,24 @@ section h2 {
     color: #35424a;
 }
 
-.certificate, .apcs-scores {
+.award, .award {
     margin-bottom: 15px;
     opacity: 0;
     transform: translateY(20px); /* 從下方滑入 */
     animation: slideUp 1s forwards ease-out;
 }
 
-.certificate a, .apcs-scores a {
-    color: #35424a;
-    text-decoration: none;
+.award a, .award a {
+    text-decoration: none;  /* 保留下劃線樣式 */
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
-.certificate a:hover, .apcs-scores a:hover {
+.award a:hover, .award a:hover {
     text-decoration: underline;
-    color: #ff6347;
+    color: #f90707; /* 滑過時顯示橘色 */
 }
+
 
 .gallery-container {
     display: flex;
@@ -120,6 +120,29 @@ footer {
     opacity: 0;
     animation: fadeInProfile 2s ease-in-out forwards;
 }
+
+#growth h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#growth ul {
+    padding-left: 20px;
+    list-style-type: none;
+}
+
+#growth ul li {
+    position: relative;
+    padding-left: 20px; 
+}
+
+#growth ul li::before {
+    content: "•"; 
+    position: absolute;
+    left: 0;
+    color: #35424a;
+}
+
 
 @keyframes fadeInHeader {
     from {
