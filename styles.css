@@ -3,7 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+a {
+    color: #0000EE;
+    text-decoration: underline;
+}
 body {
     font-family: 'Noto Sans TC', sans-serif;
     line-height: 1.6;
