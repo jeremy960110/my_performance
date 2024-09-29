@@ -89,7 +89,6 @@ section h2 {
     color: #f90707; /* 鏈接滑過時變紅色 */
 }
 
-/* 圖片畫廊樣式 */
 .gallery-container {
     display: flex;
     flex-wrap: wrap;
@@ -128,22 +127,22 @@ footer {
 }
 
 /* 成長歷程部分的樣式調整 */
-#growth h3 {
+#growth h3 ,#interest h3{
     margin-top: 20px;
     margin-bottom: 10px;
 }
 
-#growth ul {
+#growth ul ,#interest ul{
     padding-left: 20px;
     list-style-type: none; /* 移除預設的列表樣式 */
 }
 
-#growth ul li {
+#growth ul li ,#interest ul li{
     position: relative;
     padding-left: 20px; /* 讓內容與符號對齊 */
 }
 
-#growth ul li::before {
+#growth ul li::before ,#interest ul li::before {
     content: "•"; /* 自定義符號 */
     position: absolute;
     left: 0;
@@ -201,4 +200,3 @@ footer {
         transform: translateY(0);
     }
 }
-
