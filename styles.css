@@ -67,20 +67,20 @@ section h2 {
     color: #35424a;
 }
 
-.award {
+#academic .award {
     margin-bottom: 15px;
     opacity: 0;
     transform: translateY(20px); /* 從下方滑入 */
     animation: slideUp 1s forwards ease-out;
 }
 
-.award a {
+#academic .award a {
     text-decoration: none;  /* 保留下劃線樣式 */
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
-.award a:hover {
+#academic .award a:hover {
     text-decoration: underline;
     color: #f90707; /* 滑過時顯示橘色 */
 }
