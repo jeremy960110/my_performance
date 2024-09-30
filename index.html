@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>彭彥傑的個人網站</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="question.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
@@ -82,9 +83,12 @@
             <li><strong>數學：</strong> 對數學的熱愛讓我在程式設計和邏輯思維上有更深的理解。</li>
         </ul>
     </section>
+    
     <section id="quiz">
         <h2>個人問答</h2>
-        <p>您是否仔細閱讀了我的資料？試試看，回答這個問題吧：</p>
+        <p>試試看，回答這些問題吧：)</p>
+        
+        <!-- 問題 8 -->
         <form id="quizForm1">
             <p>問題 1：在學習和生活中，我最重視的價值觀是什麼？</p>
             <input type="radio" name="value" value="持續學習"> 持續學習<br>
@@ -95,6 +99,7 @@
         </form>
         <p id="quizResult1"></p>
 
+        <!-- 問題 6 -->
         <form id="quizForm2">
             <p>問題 2：在未來五年內，我希望實現的目標是什麼？</p>
             <input type="radio" name="goal" value="進入頂尖大學"> 進入頂尖大學<br>
@@ -105,6 +110,7 @@
         </form>
         <p id="quizResult2"></p>
 
+        <!-- 問題 3 -->
         <form id="quizForm3">
             <p>問題 3：在我的高中生涯中，我最引以為豪的成就是什麼？</p>
             <input type="radio" name="achievement" value="贏得資訊學科能力競賽"> 贏得資訊學科能力競賽<br>
@@ -114,38 +120,20 @@
             <button type="button" onclick="checkAnswer3()">提交</button>
         </form>
         <p id="quizResult3"></p>
+        
+        <!-- 問題 4 -->
         <form id="quizForm4">
-            <label for="question">問題：我選擇學習的第一個程式設計語言是什麼？</label><br>
+            <label for="question">問題 4：我選擇學習的第一個程式設計語言是什麼？</label><br>
             <input type="radio" id="python" name="language" value="Python">
             <label for="python">Python</label><br>
             <input type="radio" id="java" name="language" value="Java">
             <label for="java">Java</label><br>
             <input type="radio" id="c" name="language" value="C">
-            <label for="c">C</label><br>
+            <label for="c++">C++</label><br>
             <button type="button" onclick="checkAnswer4()">提交</button>
         </form>
         <p id="quizResult4"></p>
     </section>
-    
-    <script>
-        function checkAnswer() {
-            const selectedAnswer = document.querySelector('input[name="language"]:checked');
-            if (selectedAnswer) {
-                const answer = selectedAnswer.value;
-                const result = document.getElementById("quizResult");
-                if (answer === "Python") {
-                    result.innerHTML = "正確！我選擇的第一個程式語言是 Python。";
-                    result.style.color = "green";
-                } else {
-                    result.innerHTML = "錯誤，再試一次！";
-                    result.style.color = "red";
-                }
-            } else {
-                alert("請選擇一個答案！");
-            }
-        }
-    </script>
-    
 
     <section id="contact">
         <h2>聯絡方式</h2>
@@ -153,7 +141,6 @@
         <p>電子郵件：<a href="mailto:jeremy960110@gmail.com">jeremy960110@gmail.com</a></p>
         <p>電話：+886 0972206678</p>
     </section>
-
 </body>
 
 </html>
