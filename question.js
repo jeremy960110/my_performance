@@ -3,8 +3,8 @@ function checkAnswer1() {
     const result = document.getElementById("quizResult1");
     if (selectedAnswer) {
         const answer = selectedAnswer.value;
-        if (answer === "耐心與堅持") {
-            result.innerHTML = "正確！我最重視的價值觀是耐心與堅持。";
+        if (answer === "持續學習") {
+            result.innerHTML = "正確！我最重視的價值觀是持續學習。";
             result.style.color = "green";
         } else {
             result.innerHTML = "錯誤，再試一次！";
