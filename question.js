@@ -20,8 +20,8 @@ function checkAnswer2() {
     const result = document.getElementById("quizResult2");
     if (selectedAnswer) {
         const answer = selectedAnswer.value;
-        if (answer === "進入頂尖大學") {
-            result.innerHTML = "正確！我希望在未來五年內進入頂尖大學。";
+        if (answer === "考上資工研究所") {
+            result.innerHTML = "正確！我希望在未來五年內考上資工研究所。";
             result.style.color = "green";
         } else {
             result.innerHTML = "錯誤，再試一次！";
